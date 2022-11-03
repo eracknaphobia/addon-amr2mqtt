@@ -503,9 +503,8 @@ def main_loop():
                 )
 
         except Exception as ex:  # pylint: disable=broad-except
-            logging.debug("Exception squashed! %s: %s", ex.__class__.__name__, ex)
-            
-        time.sleep(600)
+            logging.debug("Exception squashed! %s: %s", ex.__class__.__name__, ex)            
+            time.sleep(2)
 
 
 # Register signals we listen for
